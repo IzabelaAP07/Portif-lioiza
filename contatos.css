@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: grid;
+    height: 97vh;
+   
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.30fr 1.35fr 1.35fr ;
+    grid-template-areas: "nav nav nav nav"
+                         "telefone telefone instagram instagram"
+                         "linkedin linkedin facebook facebook"
+                         "inteligência inteligência curiosidade curiosidade";
+grid-gap: 0.5em;
+font-size: 25px ;
+
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+text-align: center;
+font-weight: 800;
+}
+#nav{
+    align-items: center ;
+    display: flex;
+    justify-content: stretch;
+    background-color: white;
+    grid-area: nav;
+    border-radius: 0.8em;
+}
+#menu a{
+    text-decoration: none;
+    font-size: 22px;
+    margin-left: 15vh;
+    color: black;
+    text-align: center;
+
+}
+
+#menu a:hover{
+    background-color:lightblue;
+    color: rgb(15, 15, 124);
+    
+}
+
+
+#instagram{
+   
+    grid-area: instagram;
+    border-radius: 0.8em;
+    background-color: rgb(15, 15, 124) ;
+    color: white;
+}
+#telefone{
+    color: white;
+    grid-area: telefone;
+    border-radius: 0.8em;
+    background-color: rgb(15, 15, 124) ;
+}
+#linkedin{
+    color: white;
+    grid-area: linkedin;
+    border-radius: 0.8em;
+    background-color: rgb(15, 15, 124) ;
+}
+#facebook{
+    color: white;
+    grid-area: facebook;
+    border-radius: 0.8em;
+    background-color: rgb(15, 15, 124) ;
+}
+

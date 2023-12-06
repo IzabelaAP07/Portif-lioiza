@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: grid;
+    height: 100vh;
+   
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.45fr 1.55fr 1fr 1fr;
+    grid-template-areas: "nav nav nav nav"
+                         "sidebar sidebar sidebar sidebar"
+                         "sidebar sidebar sidebar sidebar"
+                         "sidebar sidebar sidebar sidebar";
+grid-gap: 0.5em;
+font-size: 16px ;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+text-align: center;
+font-weight: 800;
+}
+#nav{
+    align-items: center ;
+    display: flex;
+    justify-content: stretch;
+    background-color: white;
+    grid-area: nav;
+    border-radius: 0.8em;
+}
+#menu a{
+    text-decoration: none;
+    font-size: 22px;
+    margin-left: 15vh;
+    color: black;
+    text-align: center;
+
+}
+
+#menu a:hover{
+background-color: lightblue;
+color:white ;
+}
+
+
+
+#sidebar{
+    background-color: rgb(15, 15, 124) ;
+    color: white;
+    grid-area: sidebar;
+    border-radius: 0.8em;
+    text-align: justify;
+   
+}
+#texto{
+   margin-left: 45vh;
+}
+

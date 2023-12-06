@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: grid;
+    height: 250vh;
+   
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.16fr 1.28fr 1.28fr 1.28fr;
+    grid-template-areas: "nav nav nav nav"
+                         "aumentada aumentada realidade realidade"
+                         "ciência ciência oit oit"
+                         "inteligência inteligência curiosidade curiosidade";
+grid-gap: 0.5em;
+font-size: 25px ;
+
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+text-align: center;
+font-weight: 800;
+}
+#nav{
+    align-items: center ;
+    display: flex;
+    justify-content: stretch;
+    background-color: white;
+    grid-area: nav;
+    border-radius: 0.8em;
+}
+#menu a{
+    text-decoration: none;
+    font-size: 22px;
+    margin-left: 15vh;
+    color: black;
+    text-align: center;
+
+}
+
+#menu a:hover{
+    background-color:lightblue;
+    color: rgb(15, 15, 124);
+    
+}
+
+
+#realidade{
+   
+    grid-area: realidade;
+    border-radius: 0.8em;
+    background-color: rgb(15, 15, 124) ;
+    color: white;
+}
+#aumentada{
+    color: white;
+    grid-area: aumentada;
+    border-radius: 0.8em;
+    background-color: rgb(15, 15, 124) ;
+}
+#ciência{
+    color: white;
+    grid-area: ciência;
+    border-radius: 0.8em;
+    background-color: rgb(15, 15, 124) ;
+}
+#oit{
+    color: white;
+    grid-area: oit;
+    border-radius: 0.8em;
+    background-color: rgb(15, 15, 124) ;
+}
+
+#inteligência{
+    color: white;
+    grid-area: inteligência;
+    border-radius: 0.8em;
+    background-color: rgb(15, 15, 124) ;
+}
+
+#curiosidade{
+    color: white;
+    grid-area:curiosidade;
+    border-radius: 0.8em;
+    background-color: rgb(15, 15, 124) ;
+}

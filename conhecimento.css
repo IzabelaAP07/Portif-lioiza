@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: grid;
+    height: 250vh;
+   
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.16fr 1.28fr 1.28fr 1.28fr;
+    grid-template-areas: "nav nav nav nav"
+                         "humanas humanas linguagens linguagens"
+                         "matemática matemática natureza natureza"
+                         "informática informática projeto projeto";
+grid-gap: 0.5em;
+font-size: 25px ;
+
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+text-align: center;
+font-weight: 800;
+}
+#nav{
+    align-items: center ;
+    display: flex;
+    justify-content: stretch;
+    background-color: white;
+    grid-area: nav;
+    border-radius: 0.8em;
+}
+#menu a{
+    text-decoration: none;
+    font-size: 22px;
+    margin-left: 15vh;
+    color: black;
+    text-align: center;
+
+}
+
+#menu a:hover{
+    background-color:lightblue;
+    color: rgb(15, 15, 124);
+    
+}
+
+
+#linguagens{
+   
+    grid-area: linguagens;
+    border-radius: 0.8em;
+    background-color: rgb(15, 15, 124) ;
+    color: white;
+}
+#humanas{
+    color: white;
+    grid-area: humanas;
+    border-radius: 0.8em;
+    background-color: rgb(15, 15, 124) ;
+}
+#matemática{
+    color: white;
+    grid-area: matemática;
+    border-radius: 0.8em;
+    background-color: rgb(15, 15, 124) ;
+}
+#natureza{
+    color: white;
+    grid-area: natureza;
+    border-radius: 0.8em;
+    background-color: rgb(15, 15, 124) ;
+}
+
+#informática{
+    color: white;
+    grid-area: informática;
+    border-radius: 0.8em;
+    background-color: rgb(15, 15, 124) ;
+}
+
+#projeto{
+    color: white;
+    grid-area: projeto;
+    border-radius: 0.8em;
+    background-color: rgb(15, 15, 124) ;
+}
